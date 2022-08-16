@@ -33,7 +33,3 @@ if __name__ == '__main__':
 elapsed_time = timeit.timeit(code_to_test, number=100)/100
 print(elapsed_time)
 
-
-
-
-
