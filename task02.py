@@ -4,18 +4,17 @@ class A:
     def __init__(self):
         self.mas = []
 
-    def append_element(self, element):
-        self.mas.append(element)
+    def append_element(self, el):
+        self.mas.append(el)
 
     def get_element(self):
-        out = self.mas[0]
-        del self.mas[0]
+        if self.mas: out = self.mas.pop(0)
+        else: out = None
         print out
         return out
 
     def print_list(self):
-        print out
-        type(self.mas)
+        print self.mas
 
 
 a = A()
